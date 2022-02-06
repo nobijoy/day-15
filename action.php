@@ -3,7 +3,8 @@ require_once 'vendor/autoload.php';
 use App\classes\Home;
 use App\classes\PasswordGenerator;
 use App\classes\Blog;
-
+use App\classes\Products;
+use App\classes\Details;
 if (isset($_GET['pages'])){
     if ($_GET['pages'] == 'home'){
         include 'pages/home.php';
@@ -15,6 +16,16 @@ if (isset($_GET['pages'])){
         $blog = new Blog();
         $blogs = $blog->getAllBlog();
         include 'pages/blog.php';
+    }
+    elseif ($_GET['pages'] == 'product'){
+        $product = new Products();
+        $products = $product->getAllProducts();
+        include 'pages/product.php';
+    }
+    elseif ($_GET['pages'] == 'details'){
+        $detail = new Details();
+        $details = $detail->getDetails();
+        include 'pages/details.php';
     }
 
 }

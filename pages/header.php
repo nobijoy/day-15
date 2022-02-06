@@ -13,11 +13,11 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-            <a href="" class="navbar-brand">LOGO</a>
+            <a href="" class="navbar-brand">ETSY</a>
             <ul class="navbar-nav">
                 <li><a href="action.php?pages=password-reset" class="nav-link">Password Generator</a></li>
                 <li><a href="action.php?pages=blog" class="nav-link">All Blogs</a></li>
-                <li><a href="" class="nav-link">Series</a></li>
+                <li><a href="action.php?pages=product" class="nav-link">All Products</a></li>
             </ul>
         </div>
     </nav>
